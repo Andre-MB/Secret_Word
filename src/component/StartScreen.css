@@ -1,12 +1,18 @@
 .App {
-    height: 100vh;
+  height: 100vh;
 }
 
 .start h1 {
-    font-size: 3.5em;
+  font-size: 3.5em;
 }
 
 .start p {
-    margin-bottom: 2em;
-    color: #ecfa00;
+  margin-bottom: 2em;
+  color: #ecfa00;
+}
+
+@media screen and (max-width: 480px) {
+  .start p {
+    text-align: center;
+  }
 }

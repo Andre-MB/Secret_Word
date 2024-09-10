@@ -44,6 +44,8 @@ function App() {
     // pick a random word
     const word = words[category][Math.floor(Math.random() * words[category].length)]
 
+    setGuesses(3)
+
     return { word, category }
   }, [words]);
 
@@ -123,7 +125,7 @@ function App() {
 
   }, [guesses]);
 
-  console.log(gameStage)
+  // console.log(gameStage)
 
   // check win condition
   useEffect(() => {
